@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Nilai extends Model
 {
+    protected $fillable = [
+        'id_dosen', 'id_kriteria', 'nilai',
+    ];
+
     public $timestamps = false;
 
     public function dosen()

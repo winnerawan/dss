@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\AdminAuth;
 
+use DB;
+use App\SubKriteria;
 use App\Kriteria;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -45,6 +47,15 @@ class KriteriaController extends Controller
 
         $kriteria->save();
 
+        $sub_kriteriasInput = $request->get('sub_kriterias');
+        $sub_kriterias = [];
+
+        foreach ($sub_kriteriasInput as $sub_kriteria) {
+            $sub_kriterias[] = new SubKriteria($sub_kriteria);
+        }
+
+        $kriteria->sub_kriteria()->saveMany($sub_kriterias);
+
         return redirect('admin/kriteria');
     }
 
@@ -67,9 +78,9 @@ class KriteriaController extends Controller
      */
     public function edit($id)
     {
-        $kriteria = Kriteria::find($id);
-
+        $kriteria = Kriteria::with('sub_kriteria')->find($id);
         return view('admin.kriteria.edit')->with(['kriteria' => $kriteria]);
+
     }
 
     /**
@@ -88,6 +99,15 @@ class KriteriaController extends Controller
         $kriteria->bobot = $request->input('bobot');
 
         $kriteria->save();
+//
+//        $sub_kriteriasInput = $request->get('sub_kriterias');
+//        $sub_kriterias = [];
+//
+//        foreach ($sub_kriteriasInput as $sub_kriteria) {
+//            $sub_kriterias[] = new SubKriteria($sub_kriteria);
+//        }
+//
+//        $kriteria->sub_kriteria()->update($sub_kriterias);
 
         return redirect('admin/kriteria');
 
@@ -105,6 +125,8 @@ class KriteriaController extends Controller
         $kriteria = Kriteria::find($id);
 
         $kriteria->delete();
+        $sub_kriteria = SubKriteria::find($id);
+        $sub_kriteria->delete();
 
         return redirect()->route('admin.kriteria.index');
     }

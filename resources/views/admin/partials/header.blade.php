@@ -30,16 +30,17 @@
                     </li>
 
 
-                    <li class="list-inline-item dropdown notification-list">
-                        <a class="nav-link waves-effect waves-light right-bar-toggle" href="javascript:void(0);">
-                            <i class="zmdi zmdi-format-subject noti-icon"></i>
-                        </a>
-                    </li>
+                    {{--<li class="list-inline-item dropdown notification-list">--}}
+                        {{--<a class="nav-link waves-effect waves-light right-bar-toggle" href="javascript:void(0);">--}}
+                            {{--<i class="zmdi zmdi-format-subject noti-icon"></i>--}}
+                        {{--</a>--}}
+                    {{--</li>--}}
 
                     <li class="list-inline-item dropdown notification-list">
                         <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
                            aria-haspopup="false" aria-expanded="false">
-                            <img src="{{ asset("admin/assets/images/users/avatar-1.jpg") }}" alt="user" class="rounded-circle">
+                            <i class="icon-user"></i>
+{{--                            <img src="{{ asset("admin/assets/images/users/avatar-1.jpg") }}" alt="user" class="rounded-circle">--}}
                         </a>
                         <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
                             <!-- item-->
@@ -99,15 +100,15 @@
                     </li>
 
                     <li class="has-submenu">
-                        <a href="{{ url('admin/subkriteria') }}"><i class="zmdi zmdi-collection-item"></i><span> Sub Kriteria </span> </a>
-
-                    </li>
-
-
-                    <li class="has-submenu">
                         <a href="{{ url('admin/dosen') }}"><i class="zmdi zmdi-collection-text"></i><span> Dosen </span> </a>
 
                     </li>
+
+                    <li class="has-submenu">
+                        <a href="{{ url('admin/hitung') }}"><i class="zmdi zmdi-code-setting"></i><span> Hitung </span> </a>
+
+                    </li>
+
 
                     <li class="has-submenu">
                         <a href="{{ url('admin/ranks') }}"><i class="zmdi zmdi-chart"></i><span> Ranking </span> </a>

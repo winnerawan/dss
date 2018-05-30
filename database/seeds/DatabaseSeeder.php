@@ -15,6 +15,6 @@ class DatabaseSeeder extends Seeder
         $this->call(DosensTableSeeder::class);
         $this->call(KriteriasTableSeeder::class);
         //$this->call(NilaisTableSeeder::class);
-        //$this->call(SubKriteriasTableSeeder::class);
+        $this->call(SubKriteriasTableSeeder::class);
     }
 }

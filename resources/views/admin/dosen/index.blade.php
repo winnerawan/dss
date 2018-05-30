@@ -16,7 +16,7 @@
                         </div>
 
                     </div>
-                    <h4 class="page-title">Data Dosen</h4>
+                    <h4 class="page-title">Master Data Dosen</h4>
                 </div>
             </div>
             <!-- end row -->

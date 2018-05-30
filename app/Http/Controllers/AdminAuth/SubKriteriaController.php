@@ -28,7 +28,7 @@ class SubKriteriaController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**

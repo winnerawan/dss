@@ -52,6 +52,49 @@
 
                                     </div>
 
+                                    </br>
+                                    <h4 class="header-title m-t-0">Item Kriteria</h4>
+
+                                    <div class="form-group">
+                                        <label for="emailAddress">Value 1<span class="text-danger">*</span></label>
+                                        {{ Form::text('sub_kriterias[0][sub_kriteria]', null, array('class' => 'form-control', 'required' => '', 'maxlength' => '255')) }}
+                                        {{ Form::hidden('sub_kriterias[0][value]', '1') }}
+                                        {{ Form::hidden('sub_kriterias[0][id_kriteria]', '') }}
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="emailAddress">Value 2<span class="text-danger">*</span></label>
+                                        {{ Form::text('sub_kriterias[1][sub_kriteria]', null, array('class' => 'form-control', 'required' => '', 'maxlength' => '255')) }}
+                                        {{ Form::hidden('sub_kriterias[1][value]', '2') }}
+                                        {{ Form::hidden('sub_kriterias[1][id_kriteria]', '') }}
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="emailAddress">Value 3<span class="text-danger">*</span></label>
+                                        {{ Form::text('sub_kriterias[2][sub_kriteria]', null, array('class' => 'form-control', 'required' => '', 'maxlength' => '255')) }}
+                                        {{ Form::hidden('sub_kriterias[2][value]', '3') }}
+                                        {{ Form::hidden('sub_kriterias[2][id_kriteria]', '') }}
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="emailAddress">Value 4<span class="text-danger">*</span></label>
+                                        {{ Form::text('sub_kriterias[3][sub_kriteria]', null, array('class' => 'form-control', 'required' => '', 'maxlength' => '255')) }}
+                                        {{ Form::hidden('sub_kriterias[3][value]', '4') }}
+                                        {{ Form::hidden('sub_kriterias[3][id_kriteria]', '') }}
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="emailAddress">Value 5<span class="text-danger">*</span></label>
+                                        {{ Form::text('sub_kriterias[4][sub_kriteria]', null, array('class' => 'form-control', 'required' => '', 'maxlength' => '255')) }}
+                                        {{ Form::hidden('sub_kriterias[4][value]', '5') }}
+                                        {{ Form::hidden('sub_kriterias[4][id_kriteria]', '') }}
+
+                                    </div>
+
+
                                     <div class="form-group text-right m-b-0">
                                         <button class="btn btn-primary waves-effect waves-light" type="submit">
                                             Save

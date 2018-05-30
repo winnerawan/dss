@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers\AdminAuth;
 
+use App\Dosen;
+use App\Nilai;
+use App\Kriteria;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -14,7 +17,11 @@ class NilaiController extends Controller
      */
     public function index()
     {
-        //
+        $dosens = Dosen::all();
+        $kriteria = Kriteria::with('sub_kriteria')->get();
+
+        //return $kriteria;
+        return view('admin.hitung.index')->with(['dosens' => $dosens, 'kriterias' => $kriteria]);
     }
 
     /**
@@ -24,7 +31,9 @@ class NilaiController extends Controller
      */
     public function create()
     {
-        //
+        $dosens = Dosen::all();
+
+        return view('admin.hitung.create')->with(['dosens' => $dosens]);
     }
 
     /**
@@ -35,7 +44,36 @@ class NilaiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        //$nilai_nilai->nilai = $request->get('nilai');
+
+        foreach ($request->get('nilai') as $items => $value) {
+            $nilai = new Nilai;
+            $nilai->id_dosen = $request->get('id_dosen');
+            $nilai->id_kriteria = $items;
+            $nilai->nilai = $value;
+
+            $nilai->save();
+
+        }
+
+
+
+//        $n = new Nilai;
+//
+//        $nilaiInput = $request->get('nilai');
+//        $nilais = [];
+//
+//        foreach ($nilaiInput as $nilai) {
+//            $nilais[] = new Nilai($nilai);
+//            $n->save();
+//        }
+
+
+//        return $request->get('nilai');
+        return redirect('admin/ranks');
+
+
     }
 
     /**

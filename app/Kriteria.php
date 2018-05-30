@@ -18,4 +18,10 @@ class Kriteria extends Model
     {
         return $this->hasMany(SubKriteria::class, 'id_kriteria');
     }
+
+    public function sub_kriterias()
+    {
+        return $this->hasMany(SubKriteria::class, 'id_kriteria');
+    }
+
 }
