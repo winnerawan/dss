@@ -30,3 +30,17 @@ Route::group(['prefix' => 'admin'], function () {
   Route::get('/password/reset', 'AdminAuth\ForgotPasswordController@showLinkRequestForm')->name('password.reset');
   Route::get('/password/reset/{token}', 'AdminAuth\ResetPasswordController@showResetForm');
 });
+
+Route::group(['prefix' => 'student'], function () {
+  Route::get('/login', 'StudentAuth\LoginController@showLoginForm')->name('login');
+  Route::post('/login', 'StudentAuth\LoginController@login');
+  Route::post('/logout', 'StudentAuth\LoginController@logout')->name('logout');
+
+  Route::get('/register', 'StudentAuth\RegisterController@showRegistrationForm')->name('register');
+  Route::post('/register', 'StudentAuth\RegisterController@register');
+
+  Route::post('/password/email', 'StudentAuth\ForgotPasswordController@sendResetLinkEmail')->name('password.request');
+  Route::post('/password/reset', 'StudentAuth\ResetPasswordController@reset')->name('password.email');
+  Route::get('/password/reset', 'StudentAuth\ForgotPasswordController@showLinkRequestForm')->name('password.reset');
+  Route::get('/password/reset/{token}', 'StudentAuth\ResetPasswordController@showResetForm');
+});
