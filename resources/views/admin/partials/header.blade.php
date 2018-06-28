@@ -6,7 +6,8 @@
             <!-- LOGO -->
             <div class="topbar-left">
                 <a href="{{ url('') }}" class="logo">
-                    <i class="zmdi zmdi-group-work icon-c-logo"></i>
+                    <img src="{{ asset("assets/images/logo_akbid.png") }}" width="40px" height="40px"/>
+                    {{--<i class="zmdi zmdi-group-work icon-c-logo"></i>--}}
                     <span>{{ config('app.name') }}</span>
                 </a>
             </div>
@@ -48,10 +49,10 @@
                                 <h5 class="text-overflow"><small>{{ Auth::user()->name }}</small> </h5>
                             </div>
 
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <i class="zmdi zmdi-account-circle"></i> <span>Profile</span>
-                            </a>
+                            {{--<!-- item-->--}}
+                            {{--<a href="javascript:void(0);" class="dropdown-item notify-item">--}}
+                                {{--<i class="zmdi zmdi-account-circle"></i> <span>Profile</span>--}}
+                            {{--</a>--}}
 
 
                             <!-- item-->
@@ -97,6 +98,10 @@
                                 {{--</ul>--}}
                             {{--</li>--}}
                         {{--</ul>--}}
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="{{ url('admin/student') }}"><i class="zmdi zmdi-collection-text"></i><span> Mahasiswa </span> </a>
                     </li>
 
                     <li class="has-submenu">

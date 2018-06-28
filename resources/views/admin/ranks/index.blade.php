@@ -1,4 +1,4 @@
-@extends('admin.template')
+@extends('admin.template_nobg')
 
 @section('content')
     <div class="wrapper">
@@ -10,7 +10,11 @@
                     <div class="btn-group pull-right m-t-15">
 
                     </div>
-                    <h4 class="page-title">Ranking</h4>
+                    <h4 class="page-title"></h4>
+                    <button onclick="window.print()" class="btn-danger">Cetak</button><br/>
+                    <br/><br/>
+                    <center>
+                    <img src="http://localhost:8000/assets/images/kop.png"></center>
                 </div>
             </div>
             <!-- end row -->

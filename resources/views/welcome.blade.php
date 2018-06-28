@@ -43,47 +43,47 @@
 
 <div id="wrap">
 
-    <!-- LOADER -->
-    <div id="loader-wrapper">
-        <div id="loader"><img src="{{ asset("assets/images/favicon.ico") }}" alt=""><span>Loading...</span></div>
-        <!--/#loader-->
-        <div class="loader-section section-left"></div>
-        <!--/#loader-section section-left-->
-        <div class="loader-section section-right"></div>
-        <!--/#loader-section section-right-->
-    </div>
+    {{--<!-- LOADER -->--}}
+    {{--<div id="loader-wrapper">--}}
+        {{--<div id="loader"><img src="{{ asset("assets/images/favicon.ico") }}" alt=""><span>Loading...</span></div>--}}
+        {{--<!--/#loader-->--}}
+        {{--<div class="loader-section section-left"></div>--}}
+        {{--<!--/#loader-section section-left-->--}}
+        {{--<div class="loader-section section-right"></div>--}}
+        {{--<!--/#loader-section section-right-->--}}
+    {{--</div>--}}
 
 
     <!-- CUSTOM MENU START -->
-    <div class="mobile-menu">
-        <div class="cd-header">
-            <a class="cd-primary-nav-trigger" href="javascript:void(0);">
-                <span class="cd-menu-icon"></span>
-            </a>
-        </div>
+    {{--<div class="mobile-menu">--}}
+        {{--<div class="cd-header">--}}
+            {{--<a class="cd-primary-nav-trigger" href="javascript:void(0);">--}}
+                {{--<span class="cd-menu-icon"></span>--}}
+            {{--</a>--}}
+        {{--</div>--}}
 
 
-        <nav>
-            <ul class="cd-primary-nav">
-                <li class="cd-label">Custom Menu</li>
+        {{--<nav>--}}
+            {{--<ul class="cd-primary-nav">--}}
+                {{--<li class="cd-label">Custom Menu</li>--}}
 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">work</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">news</a></li>
-                <li><a href="contact-us.html">contact us</a></li>
-                <li class="cd-label">Follow us</li>
+                {{--<li><a href="index.html">Home</a></li>--}}
+                {{--<li><a href="#">work</a></li>--}}
+                {{--<li><a href="#">About Us</a></li>--}}
+                {{--<li><a href="#">news</a></li>--}}
+                {{--<li><a href="contact-us.html">contact us</a></li>--}}
+                {{--<li class="cd-label">Follow us</li>--}}
 
-                <li class="social-icons">
-                    <a href="#."><span class="icon-facebook-1"></span></a>
-                    <a href="#."><span class="icon-twitter-1"></span></a>
-                    <a href="#."><span class="icon-google"></span></a>
-                    <a href="#."><span class="icon-behance"></span></a>
-                </li>
+                {{--<li class="social-icons">--}}
+                    {{--<a href="#."><span class="icon-facebook-1"></span></a>--}}
+                    {{--<a href="#."><span class="icon-twitter-1"></span></a>--}}
+                    {{--<a href="#."><span class="icon-google"></span></a>--}}
+                    {{--<a href="#."><span class="icon-behance"></span></a>--}}
+                {{--</li>--}}
 
-            </ul>
-        </nav>
-    </div>
+            {{--</ul>--}}
+        {{--</nav>--}}
+    {{--</div>--}}
     <!-- CUSTOM MENU END -->
 
     <!-- MAIN HEADER -->
@@ -96,13 +96,13 @@
                     <div class="col-md-12">
 
                         <div class="navbar-brand">
-                            <a href="{{ url('') }}"><img style="margin-top: -15px;" alt="" src="{{ asset("assets/images/kop.png") }}" width="60"></a>
+                            <a href="{{ url('') }}"><img style="margin-bottom: 25px;" alt="" src="" ></a>
                         </div>
 
                         <div class="navigation">
 
                             <ul>
-                                <li class="select"><span>01.</span><a href="index.html">home</a></li>
+                                <li class="select"><span>01.</span><a href="index.html"></a></li>
                                 <li><span>02.</span><a href="#">about us</a></li>
                                 <li><span>03.</span><a href="#">news</a></li>
                                 <li><span>04.</span><a href="#">contact us</a></li>
@@ -126,10 +126,9 @@
 
 
     <!-- STICKY HEADER -->
-    <!--
+
         <header class="header-two cb-header">
-     -->
-    <!--
+
                 <div class="container">
 
                     <div class="header">
@@ -163,10 +162,10 @@
                     </div>
 
                 </div>
-     -->
-    <!--
+
+
         </header>
-     -->
+
 
 
 
@@ -183,6 +182,14 @@
     <div class="tp-banner-container main-banner">
         <div class="tp-banner white-slide " >
             <ul>	<!-- SLIDE  -->
+
+
+
+
+
+
+
+
                 <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-thumb=""  data-saveperformance="on"  data-title="Intro Slide">
                     <!-- MAIN IMAGE -->
                     <img src="{{ asset("assets/images/slides/background.jpg") }}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
@@ -202,7 +209,7 @@
                          data-splitout="none"
                          data-elementdelay="0.1"
                          data-endelementdelay="0.1"
-                         style="z-index:7; max-width: auto; font-size:20px; letter-spacing:2px; max-height: auto; white-space: nowrap;">e-survey
+                         style="z-index:7; max-width: auto; font-size:20px; letter-spacing:2px; max-height: auto; white-space: nowrap;">SPK PENILAIAN
                     </div>
 
 
@@ -216,8 +223,8 @@
                          data-splitout="none"
                          data-elementdelay="0.1"
                          data-endelementdelay="0.1"
-                         style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap; text-transform:uppercase; line-height:72px;">Survey
-                        <br/> Mahasiswa
+                         style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap; text-transform:uppercase; line-height:72px;">
+                            KINERJA <br/>DOSEN
                     </div>
 
 
@@ -248,153 +255,7 @@
                          data-elementdelay="0.1"
                          data-endelementdelay="0.1"
                          data-linktoslide="next"
-                         style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='/survey' class='largeredbtn'>Take Survey</a>
-                    </div>
-
-
-                </li>
-
-
-
-
-                <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-thumb=""  data-saveperformance="on"  data-title="Intro Slide">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{ asset("assets/images/slides/background.jpg") }}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                    <!-- LAYERS -->
-
-
-
-
-
-                    <div class="tp-caption grey_heavy_72 fade start"
-                         data-x="60"
-                         data-y="610"
-                         data-speed="1000"
-                         data-start="1000"
-
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         style="z-index:7; max-width: auto; font-size:20px; letter-spacing:2px; max-height: auto; white-space: nowrap;">e-survey
-                    </div>
-
-
-                    <div class="tp-caption black_heavy_60 fade start"
-                         data-x="60"
-                         data-y="640"
-                         data-speed="1000"
-                         data-start="1000"
-                         data-easing="Power3.easeInOut"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap; text-transform:uppercase; line-height:72px;">Survey
-                        <br/> Mahasiswa
-                    </div>
-
-
-                    <div class="tp-caption customin rs-parallaxlevel-0"
-                         data-x="left"
-                         data-y="bottom"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-speed="0"
-                         data-start="10"
-                         data-easing="Power3.easeInOut"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         style="z-index: 6;"><img style="width:100%;" alt="" src="{{ asset("assets/images/slides/yellow-bg.png") }}">
-                    </div>
-
-
-
-                    <!-- LAYER NR. 11 -->
-                    <div class="tp-caption customin tp-resizeme rs-parallaxlevel-0 fade"
-                         data-x="60"
-                         data-y="820"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-speed="1000"
-                         data-start="1000"
-                         data-easing="Power3.easeInOut"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-linktoslide="next"
-                         style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='/survey' class='largeredbtn'>Take Survey</a>
-                    </div>
-
-
-                </li>
-
-
-                <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-thumb=""  data-saveperformance="on"  data-title="Intro Slide">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{ asset("assets/images/slides/background.jpg") }}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-                    <!-- LAYERS -->
-
-
-
-
-
-                    <div class="tp-caption grey_heavy_72 fade start"
-                         data-x="60"
-                         data-y="610"
-                         data-speed="1000"
-                         data-start="1000"
-
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         style="z-index:7; max-width: auto; font-size:20px; letter-spacing:2px; max-height: auto; white-space: nowrap;">e-survey
-                    </div>
-
-
-                    <div class="tp-caption black_heavy_60 fade start"
-                         data-x="60"
-                         data-y="640"
-                         data-speed="1000"
-                         data-start="1000"
-                         data-easing="Power3.easeInOut"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap; text-transform:uppercase; line-height:72px;">Survey
-                        <br/> Mahasiswa
-                    </div>
-
-
-                    <div class="tp-caption customin rs-parallaxlevel-0"
-                         data-x="left"
-                         data-y="bottom"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-speed="0"
-                         data-start="10"
-                         data-easing="Power3.easeInOut"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         style="z-index: 6;"><img style="width:100%;" alt="" src="{{ asset("assets/images/slides/yellow-bg.png") }}">
-                    </div>
-
-
-
-                    <!-- LAYER NR. 11 -->
-                    <div class="tp-caption customin tp-resizeme rs-parallaxlevel-0 fade"
-                         data-x="60"
-                         data-y="820"
-                         data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                         data-speed="1000"
-                         data-start="1000"
-                         data-easing="Power3.easeInOut"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-elementdelay="0.1"
-                         data-endelementdelay="0.1"
-                         data-linktoslide="next"
-                         style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='/survey' class='largeredbtn'>Take Survey</a>
+                         style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='{{ url('student/login') }}' class='largeredbtn'>Masuk</a>
                     </div>
 
 

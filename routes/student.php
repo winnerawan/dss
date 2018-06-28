@@ -10,3 +10,4 @@ Route::get('/home', function () {
     return view('student.home');
 })->name('home');
 
+Route::resource('/hitung', 'StudentAuth\NilaiController');

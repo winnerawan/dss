@@ -9,7 +9,10 @@
 .text-custom {
   color: #64b0f2;
 }
-
+.btn-akbid {
+  color: #ffffff;
+  background-color: #380d95 !important;
+}
 .text-primary {
   color: #039cfd !important;
 }
@@ -66,8 +69,9 @@ html {
 
 body {
   font-size: 0.9rem;
-  background-color: #f5f5f5;
   padding-bottom: 70px;
+ background-image: url(http://localhost:8000/frontend/images/akbid-lg.jpg);
+ background-repeat: no-repeat;
 }
 
 .page-title-box {
@@ -335,7 +339,7 @@ File: Menu
 }
 
 .logo span span {
-  color: #1bb99a !important;
+  color: #380d95 !important;
 }
 
 #topnav {
@@ -642,6 +646,7 @@ File: Menu
   }
   .container {
     width: auto;
+
   }
   #topnav .navigation-menu {
     float: none;
@@ -1146,6 +1151,7 @@ File: Menu
 
 .page-title {
   font-size: 20px;
+  color: #ffffff;
   margin-bottom: 0;
   margin-top: 0;
   line-height: 70px;
@@ -24473,7 +24479,7 @@ div.hopscotch-bubble .hopscotch-bubble-arrow-container.down .hopscotch-bubble-ar
    Accounts pages
 ============= */
 .account-pages {
-  background: #64b0f2;
+  background-image: url(http://www.akbidmuhammadiyahmadiun.ac.id/backsite/foto_berita/slide_Untitled-2.jpg);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -24504,7 +24510,7 @@ div.hopscotch-bubble .hopscotch-bubble-arrow-container.down .hopscotch-bubble-ar
   font-size: 24px;
   line-height: 36px;
   float: none;
-  color: #1bb99a !important;
+  color: #380d95 !important;
 }
 
 .user-thumb {

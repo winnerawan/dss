@@ -16,3 +16,5 @@ Route::get('/tes/{key}', 'AdminAuth\RankController@getStatus');
 
 Route::get('/tess', 'AdminAuth\RankController@getSortTotalByDesc');
 
+Route::resource('/student', 'AdminAuth\StudentController');
+

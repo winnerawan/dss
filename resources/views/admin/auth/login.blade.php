@@ -7,7 +7,7 @@
     <meta name="author" content="Coderthemes">
 
     <!-- App Favicon -->
-    <link rel="shortcut icon" href="{{ asset("admin/assets/images/favicon.ico") }}">
+    <link rel="shortcut icon" href="{{ asset("assets/images/favicon.ico") }}">
 
     <!-- App title -->
     <title>{{ config('app.name') }}</title>
@@ -34,7 +34,8 @@
         <div class="card-box mb-0">
             <div class="text-center m-t-20">
                 <a href="{{ url('') }}" class="logo">
-                    <i class="zmdi zmdi-group-work icon-c-logo"></i>
+                    {{--<i class="zmdi zmdi-group-work icon-c-logo"></i>--}}
+                    <img src="{{ asset("assets/images/logo_akbid.png") }}" width="80px" height="80px"><br/>
                     <span>{{ config('app.name') }}</span>
                 </a>
             </div>
@@ -71,7 +72,7 @@
 
                     <div class="form-group text-center row m-t-10">
                         <div class="col-12">
-                            <button class="btn btn-success btn-block waves-effect waves-light" type="submit">Log In
+                            <button class="btn btn-akbid btn-block waves-effect waves-light" type="submit">Log In
                             </button>
                         </div>
                     </div>
@@ -94,8 +95,8 @@
 
     <div class="m-t-20">
         <div class="text-center">
-            <p class="text-white">Don't have an account? <a href="{{ url('admin/register') }}" class="text-white m-l-5"><b>Sign
-                        Up</b></a></p>
+            {{--<p class="text-white">Don't have an account? <a href="{{ url('admin/register') }}" class="text-white m-l-5"><b>Sign--}}
+                        {{--Up</b></a></p>--}}
         </div>
     </div>
 

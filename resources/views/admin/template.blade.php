@@ -7,7 +7,7 @@
     <meta name="author" content="Coderthemes">
 
     <!-- App Favicon -->
-    <link rel="shortcut icon" href="{{ asset("admin/assets/images/favicon.ico") }}">
+    <link rel="shortcut icon" href="{{ asset("assets/images/favicon.ico") }}">
 
     <!-- App title -->
     <title>{{ config('app.name') }}</title>
