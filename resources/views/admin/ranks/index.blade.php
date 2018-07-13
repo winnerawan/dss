@@ -241,7 +241,7 @@
                 </div>
 
 
-                <h4>Table 4 - Dijumlah sesuai dengan universitas dan di dapat hasil rangking</h4>
+                <h4>Table 4 - Dijumlah sesuai dengan dosen dan di dapat hasil rangking</h4>
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover">
                         <tr class="active">

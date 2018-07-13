@@ -82,7 +82,7 @@ class StudentController extends Controller {
      */
     public function update(Request $request, $id)
     {
-        $student = new Student;
+        $student = Student::find($id);
 
         $student->nim = $request->input('nim');
         $student->name = $request->input('name');
